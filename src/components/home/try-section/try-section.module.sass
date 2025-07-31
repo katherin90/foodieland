@@ -1,0 +1,25 @@
+.head
+    justify-content: space-between
+    p
+        width: 100%
+        max-width: 600px
+    +r(780)
+        display: block
+        p
+            margin-block-start: 1rem
+.list
+    margin-block-start: 5rem
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 2.5rem
+    width: 100%
+    min-width: 0
+    +r(1090)
+        grid-template-columns: repeat(3, 1fr)
+        gap: 2rem 1.5rem
+    +r(765)
+        margin-block-start: 2.5rem
+    +r(580)
+        grid-template-columns: repeat(2, 1fr)
+    +r(490)
+        grid-template-columns: 100%

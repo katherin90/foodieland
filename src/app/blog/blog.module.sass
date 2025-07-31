@@ -1,0 +1,42 @@
+.head
+    display: grid
+    width: 100%
+    min-width: 0
+    grid-template-columns: 1fr
+    gap: 1.5rem
+.search
+    margin-block-start: 5rem
+    text-align: center
+    +r(765)
+        margin-block-start: 2.5rem
+.content
+    margin-block-start: 5rem
+    display: grid
+    grid-template-columns: 1fr 25rem
+    gap: 2.5rem
+    +r(1090)
+        grid-template-columns: 100%
+    +r(765)
+        margin-block-start: 2.5rem
+.sidebar
+    +r(1090)
+        display: flex
+        justify-content: space-between
+        gap: 0 1rem
+.ads
+    width: 100%
+    height: auto
+    margin-block-start: 5rem
+    +r(1090)
+        flex: 0 1 35%
+    +r(765)
+        margin-block-start: 2.5rem
+    +r(675)
+        display: none
+.blogPagination
+    grid-column: 1/-1
+    margin-block-start: 2.5rem
+    +r(1090)
+        grid-row: 2
+    +r(765)
+        margin-block-start: 0

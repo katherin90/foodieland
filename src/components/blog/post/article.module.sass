@@ -1,0 +1,138 @@
+.head
+    text-align: center
+    .author
+        --imgWidth: 40px
+        display: flex
+        align-items: center
+        gap: 0
+        margin: 2.188rem auto 0
+        width: fit-content
+        height: 40px
+        span
+            display: inline-flex
+            align-items: center
+            width: fit-content
+            height: 100%
+            &:first-of-type
+                padding-inline-end: 1.5rem
+            &:last-child
+                padding-inline-start: 1.5rem
+                border-inline-start: 1px solid rgba(0, 0, 0, 0.1)
+        img
+            margin-inline-end: 1rem
+.description
+    width: 100%
+    max-width: 1060px
+    margin: 3rem auto 0
+    color: rgba(0, 0, 0, 0.6)
+    line-height: 1.75rem
+    +r(765)
+        margin-block-start: 1.5rem
+.imgContainer
+    position: relative
+    width: 100%
+    height: 0
+    margin-block-start: 4rem 
+    padding-block-start: 46.9%
+    background-color: var(--StyleColor)
+    border-radius: 1rem
+    overflow: hidden
+    margin-block-start: 2rem
+.img
+    position: absolute
+    inset-block-start: 0
+    inset-inline-start: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+.content
+    margin: 5rem auto 0
+    display: grid
+    grid-template-columns: 1fr max-content
+    gap: 0 3.125rem
+    width: 100%
+    max-width: 1100px
+    +r(1090)
+        grid-template-columns: 100%
+        gap: 2rem
+    +r(765)
+        margin-block-start: 2.5rem
+    article
+        padding: 0 2.5rem
+        line-height: 1.75
+        color: rgba(0, 0, 0, 0.6)
+        +r(765)
+            padding: 0
+        * + *
+            margin-block-start: 2rem
+            +r(765)
+                margin-block-start: 1rem
+        h2
+            font-size: 1.5rem
+            font-weight: 600
+            line-height: 1
+            letter-spacing: -0.8px
+            color: #000
+            &:not(:first-child)
+                margin-block-start: 3.55rem
+                +r(765)
+                    margin-block-start: 1.78rem
+        img
+            width: 100%
+            height: auto
+            border-radius: 1rem
+        blockquote
+            margin: 2rem -2.5rem 0
+            padding: 3rem 2.5rem
+            border-block-start: 1px solid rgba(0, 0, 0, 0.1)
+            border-block-end: 1px solid rgba(0, 0, 0, 0.1)
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%)
+            font-size: 2.25rem
+            font-weight: 500
+            font-style: italic
+            line-height: 1.77
+            letter-spacing: -0.8px
+            color: #000
+            +r(765)
+                margin: 1rem -1.08rem 0
+        ul, ol
+            li:not(:first-child)
+                margin-block-start: 1rem
+        ul
+            list-style-type: disc
+            li
+                list-style: disc
+                &::marker
+                    color: #c5f2fc
+        ol
+            list-style-type: auto
+            li
+                list-style: auto
+                &::marker
+                    color: #c5f2fc
+.sidebar
+    text-align: center
+    +r(1090)
+        display: flex
+        align-items: center
+        text-align: left
+    .sidebarLink
+        margin-block-start: 2rem
+        flex-direction: column
+        gap: 3rem
+        +r(1090)
+            flex-direction: row
+            margin-block-start: 0
+            margin-inline-start: 1.5rem
+.sidebarHeadline
+    font-size: 0.875rem
+    line-height: 1
+    font-weight: 600
+    letter-spacing: 2px
+    text-transform: uppercase
+
+
+
+
+
+    

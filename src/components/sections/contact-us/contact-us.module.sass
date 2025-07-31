@@ -1,0 +1,40 @@
+.form
+    display: grid
+    width: 100%
+    min-width: 0
+    grid-template-columns: 25rem 1fr
+    gap: 0 2.5rem
+    margin-block-start: 4.375rem
+    +r(990)
+        gap: 0 1.5rem
+    +r(765)
+        grid-template-columns: 20rem 1fr
+        margin-block-start: 2.5rem
+    +r(675)
+        grid-template-columns: 100%
+.imgContainer
+    width: 100%
+    +r(675)
+        width: 50%
+        margin: 0 auto
+    img
+        width: 100%
+        height: auto
+.fields
+    display: grid
+    width: 100%
+    min-width: 0
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1.5rem 2.5rem
+    +r(990)
+        gap: 1.5rem
+    +r(890)
+        grid-template-columns: 100%
+.big
+    grid-column: span 2
+    +r(890)
+        grid-column: 1
+.btn
+    margin-block-start: 1.50rem
+    width: 180px
+

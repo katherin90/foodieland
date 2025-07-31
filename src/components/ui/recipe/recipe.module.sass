@@ -1,0 +1,94 @@
+.item
+    width: 100%
+    position: relative
+    &.big
+        padding: 1rem 1rem 2rem
+        border-radius: 30px
+        background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, var(--StyleColor) 100%)
+        .title
+            margin-block-start: 1.5rem
+            font-size: 1.5rem
+        .favorite
+            inset-inline-end: 30px
+            inset-block-start: 30px
+    &.small
+        .link
+            display: grid
+            grid-template-columns: 11.25rem 1fr
+            grid-template-rows: min-content 1fr
+            gap: 1rem 1.5rem
+            +r(990)
+                grid-template-columns: 9rem 1fr
+        .imgContainer
+            grid-row: span 2
+        .title
+            line-height: 1.2
+        .author
+            font-size: 0.875rem
+            line-height: 1
+.link
+    &:hover
+        img
+            scale: 1.1
+        
+.imgContainer
+    width: 100%
+    aspect-ratio: 1/0.69
+    border-radius: 20px
+    overflow: hidden
+.img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+    transition: scale 0.3s
+.title
+    margin-block-start: 1rem
+    font-size: 1.125rem
+    font-weight: 600
+    line-height: 1.44
+    letter-spacing: -0.8px
+.info
+    display: flex
+    gap: 0 1.5rem
+    margin-block-start: 1.5rem
+    +r(880)
+        margin-block-start: 1rem
+        flex-direction: column
+        gap: 0.5rem
+.infoItem
+    display: flex
+    align-items: center
+    gap: 0 10px
+    font-size: 0.875rem
+    font-weight: 500
+    line-height: 1
+    letter-spacing: -0.2px
+    color: rgba(0, 0, 0, 0.6)
+    .icon
+        width: 24px
+        height: 24px
+.favorite
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    inset-block-start: 16px
+    inset-inline-end: 16px
+    width: 3rem
+    aspect-ratio: 1/1
+    border-radius: 100%
+    background-color: #fff
+    z-index: 2
+    .favoriteIcon
+            path
+                transition: fill 0.3s
+    &:hover
+        .favoriteIcon
+            path
+                fill: rgba(255, 99, 99, 0.5)
+    &.isActive 
+        .favoriteIcon
+            path
+                fill: rgba(255, 99, 99, 1)
+

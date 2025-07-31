@@ -1,0 +1,24 @@
+.head
+    margin:  0 auto
+    width: 100%
+    max-width: 44.1rem
+.recipesList
+    margin-block-start: 5rem
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2.5rem
+    width: 100%
+    min-width: 0
+    +r(1090)
+        gap: 1.5rem
+    +r(820)
+        grid-template-columns: repeat(2, 1fr)
+    +r(765)
+        margin-block-start: 2.5rem
+    +r(675)
+        gap: 1rem
+    +r(480)
+        grid-template-columns: 100%
+        & > div:nth-last-child(-n+3)
+            display: none
+            

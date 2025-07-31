@@ -1,0 +1,103 @@
+.slider
+    position: relative
+    width: 100%
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 5rem
+    +r(765)
+        padding: 0 1.07rem
+    &::before,
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        inset-block-start: 20px
+        inset-block-end: 20px
+        width: 40px
+        background-color: var(--StyleColor)
+        +r(765)
+            display: none
+    &::before
+        inset-inline-start: 0
+        border-start-end-radius: 30px
+        border-end-end-radius: 30px
+    &::after
+        inset-inline-end: 0
+        border-start-start-radius: 30px
+        border-end-start-radius: 30px
+.viewport
+    width: 100%
+    overflow: hidden
+    border-radius: 40px
+.list
+    display: flex
+    position: relative
+.slide
+    display: flex
+    flex: 1 0 100%
+    background-color: #E7FAFE
+    border-radius: 40px
+    overflow: hidden
+    +r(990)
+        flex-direction: column
+.info
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    flex: 0 0 48.5%
+    padding: 3.125rem 
+    +r(990)
+        order: 1
+        flex: 0 0 auto
+    +r(765)
+        padding: 1.79rem
+.headline
+    font-size: 3.3rem
+    line-height: 1.2
+    font-weight: 600
+    letter-spacing: -0.8px
+    +r(1090)
+        font-size: 2.57rem
+    +r(765)
+        font-size: 2.14rem
+.description
+    margin-block-start: 1.50rem
+    height: 3.437rem
+    overflow: hidden
+    color: rgba(0, 0, 0, 0.6)
+.tag
+    display: flex
+    gap: 0 1rem
+    padding-block-start: 1.875rem
+.label
+    padding: 0.5rem 1rem
+    background-color: rgba(0, 0, 0, 0.05)
+    border-radius: 30px
+.bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-block-start: 5.5rem
+    +r(990)
+        padding-block-start: 3.57rem
+    +r(480)
+        display: block
+        padding-block-start: 3rem
+.btn
+    +r(480)
+        margin-block-start: 3rem
+.imgContainer
+    flex: 0 0 51.5%
+    height: 100%
+    overflow: hidden
+    +r(990)
+        order: 0
+        flex: 0 0 auto
+        height: 250px
+    +r(480)
+        height: 150px
+.img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover

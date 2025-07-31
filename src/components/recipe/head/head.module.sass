@@ -1,0 +1,86 @@
+.head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 0 2rem
+    margin-block-start: 5rem
+    +r(990)
+        flex-direction: column
+        gap: 2rem
+        align-items: flex-start
+    +r(765)
+        margin-block-start: 2.5rem
+.left
+    flex: 1 1 auto
+    +r(990)
+        order: 1
+    .headline
+        margin-block-start: 0
+        text-align: left
+.info
+    display: flex
+    margin-block-start: 3rem
+    +r(660)
+        flex-wrap: wrap
+    .infoItem
+        flex: 0 1 auto
+        width: fit-content
+        padding: 5px 2rem
+        +r(660)
+            padding: 1rem
+        &:first-child
+            padding-inline-start: 0
+        &:not(:first-child)
+            border-inline-start: 1px solid rgba(0, 0, 0, 0.1)
+        +r(660)
+            flex: 0 1 50%
+            &:nth-child(3)
+                order: 3
+                border-inline-start: none
+                border-block-start: 1px solid rgba(0, 0, 0, 0.1)
+                padding-inline-start: 0 
+            &:last-child
+                order: 2
+            &:nth-child(2)
+                order: 4
+                border-block-start: 1px solid rgba(0, 0, 0, 0.1)
+        +r(480)
+            flex: 0 1 100%
+            padding-inline-start: 0
+            &:not(:first-child)
+                border-inline-start: none
+            &:last-child
+                border-block-start: 1px solid rgba(0, 0, 0, 0.1)
+.right
+    flex: 0 1 200px
+    +r(990)
+        flex: 1 1 auto
+        order: 0
+        align-self: flex-end
+.actions
+    display: flex
+    align-items: center
+    gap: 0 2rem
+.actionItem
+    display: flex
+    flex-direction: column
+.actionBtn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 5rem
+    aspect-ratio: 1
+    border-radius: 50%
+    background-color: #E7FAFE
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.1)
+    +r(820)
+        width: 4rem
+.actionLabel
+    margin-block-start: 1rem
+    font-size: 0.75rem
+    font-weight: 500
+    letter-spacing: 1px
+    text-align: center
+    

@@ -1,0 +1,28 @@
+.section
+    padding: 5rem 0
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, var(--StyleColor) 100%)
+.headline
+    margin:  0 auto
+    width: 100%
+    max-width: 44.1rem
+.content
+    margin-block-start: 5rem
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 0 2.5rem
+    width: 100%
+    min-width: 0
+    +r(1090)
+        gap: 0 1.5rem
+    +r(820)
+        grid-template-columns: repeat(2, 1fr)
+        gap: 2rem 1.5rem
+    +r(765)
+        margin-block-start: 2.5rem
+    +r(490)
+        grid-template-columns: 100%
+.btnContainer
+    margin-block-start: 5rem
+    display: flex
+    justify-content: center
+

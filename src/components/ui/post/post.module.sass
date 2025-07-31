@@ -1,0 +1,59 @@
+.post
+    &:hover, &:focus-visible
+        .img
+            scale: 1.1
+    &.inBlog
+        display: grid
+        grid-template-columns: 18.125rem 1fr
+        gap: 0 2.5rem
+        +r(675)
+            gap: 0 1rem
+        +r(620)
+            grid-template-columns: 100%
+.imgContainer
+    width: 100%
+    aspect-ratio: 1/0.69
+    border-radius: 20px
+    overflow: hidden
+.img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+    transition: scale 0.3s
+.postTitle
+    margin-block-start: 1rem
+    font-size: 1.125rem
+    font-weight: 600
+    line-height: 1.44
+    letter-spacing: -0.8px
+.postDescription
+    display: -webkit-box
+    margin-block-start: 1rem
+    margin-block-end: 1rem
+    font-size: 0.87rem
+    color: rgba(0, 0, 0, 0.6)
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 4
+    overflow: hidden
+.info
+    --imgWidth: 40px
+    &.row
+        --imgWidth: 40px
+        display: flex
+        align-items: center
+        gap: 0
+        height: 40px
+        span
+            display: inline-flex
+            align-items: center
+            width: fit-content
+            height: 100%
+            &:first-of-type
+                padding-inline-end: 1.5rem
+            &:last-child
+                padding-inline-start: 1.5rem
+                border-inline-start: 1px solid rgba(0, 0, 0, 0.1)
+                
+        img
+            margin-inline-end: 1rem

@@ -1,0 +1,105 @@
+.content
+    display: grid
+    grid-template-columns: 1fr 25rem
+    gap: 0 2.5rem
+    margin-block-start: 5rem
+    +r(990)
+        grid-template-columns: 100%
+        gap: 2.5rem
+.part
+    &:not(:first-child)
+        margin-block-start: 5rem
+.partTitle
+    font-size: 2.25rem
+    font-weight: 600
+    line-height: 1
+    letter-spacing: -0.8px
+.ingredientsPart
+    &:first-child
+        margin-block-start: 4rem
+    &:not(:first-child)
+        margin-block-start: 3rem
+.ingredientsTitle
+    font-size: 1.5rem
+    font-weight: 600
+    line-height: 1
+    letter-spacing: -0.8px 
+.ingredientsItem
+    padding: 2.063rem 0
+    border-block-end: 1px solid rgba(0, 0, 0, 0.1)
+    label
+        display: flex
+        align-items: flex-start   
+        gap: 1.5rem
+        cursor: pointer
+.check
+    appearance: none
+    flex:  0 0 1.5rem
+    width: 1.5rem
+    aspect-ratio: 1
+    margin-block-start: 3px
+    border-radius: 50%
+    border: 2px solid #DBE2E5
+    transition: border-color 0.3s, background-color 0.3s
+    background-repeat: no-repeat
+    background-position: center
+    &:checked
+        background-color: #000
+        border-color: #000
+        background-image: url('../../../assets/icon/check.svg')
+        & + .label
+            color: rgba(0, 0, 0, 0.6)
+            text-decoration: line-through
+.label
+    flex: 1 1 auto
+    font-size: 1.125rem
+    letter-spacing: -0.2px
+.stepList
+    counter-reset: li
+.stepItem
+    padding: 3rem 0
+    border-block-end: 1px solid rgba(0,0,0 , 0.1)
+    &:first-child
+        padding-block-start: 2rem
+    label
+        display: grid
+        grid-template-columns: 1.5rem 1fr
+        gap: 1.5rem
+    .check
+        margin-block-start: 0
+.stepTitle
+    font-size: 1.5rem
+    font-weight: 600
+    line-height: 1
+    letter-spacing: -0.2px
+    &:before
+        counter-increment: li
+        content: counter(li)'.' 
+        margin-inline-end: 5px
+
+.stepDescription
+    grid-column: 2/-1
+    *
+        &:not(:first-child)
+            margin-block-start: 3rem
+        *:first-child
+            margin-block-start: 1.5rem
+    img
+        width: 100%
+        height: auto
+        border-radius: 1.25rem
+    
+.ads
+    width: 100%
+    height: auto
+    margin-block-start: 5rem
+    +r(990)
+        flex: 0 1 50%
+    +r(680)
+        display: none
+.sidebar
+    +r(990)
+        display: flex
+        gap: 0 1rem
+    +r(680)
+        display: block

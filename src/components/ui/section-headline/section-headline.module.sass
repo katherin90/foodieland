@@ -1,0 +1,21 @@
+.sectionHead
+    display: flex
+    flex-direction: column
+    gap: 1.5rem 0
+    text-align: center
+    &.isLeft
+        text-align: start
+    &.towCol
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        gap: 0 2.5rem
+.headline
+    font-size: 3rem
+    font-weight: 600
+    line-height: 1
+    letter-spacing: -0.8px
+    +r(765)
+        font-size: 2.572rem
+.description
+    color: rgba(0, 0, 0, 0.6)
