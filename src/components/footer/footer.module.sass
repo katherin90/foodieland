@@ -16,5 +16,12 @@
     border-block-end: 1px solid rgba(0, 0, 0, 0.1)
 .footerBottom
     display: flex
+    align-items: center
     justify-content: space-evenly
     padding-block: 2.5rem
+    +r(480)
+        flex-wrap: wrap
+        .codeLink
+            flex: 1 1 100%
+            margin-block-end: 1.5rem
+        
