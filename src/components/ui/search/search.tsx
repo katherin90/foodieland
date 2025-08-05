@@ -20,11 +20,11 @@ const Search:React.FC<SearchType> = ({className}) => {
     const pathname = usePathname();
     const { replace } = useRouter();
     const classes = cn(s.container, className)
+    const params = new URLSearchParams(searchParams)
     
     const onSubmit  = (e:any)=>{
         if(e.code==="Enter" || e.code === undefined) {
             const term = inputRef.current?.value
-            const params = new URLSearchParams(searchParams)
             params.delete('page')
             if (term) {
                 params.set('query', term);
@@ -34,11 +34,21 @@ const Search:React.FC<SearchType> = ({className}) => {
             replace(`${pathname}?${params.toString()}`)
         }
     }
+    const onBlur = () => {
+        const value = inputRef.current?.value
+        if(value === '')  {
+            params.delete('query');
+            
+        } else {
+            if (value) params.set('query', value)
+        }
+        replace(`${pathname}?${params.toString()}`)
+    }
     
     return (
         <div className={classes}>
-            <form>
-                <input className={s.input} placeholder={TEXT.placeholder}  defaultValue={searchParams.get('query')?.toString()} ref={inputRef} onKeyDown={onSubmit} name="search"/>
+            <form onSubmit={(e)=>e.preventDefault()}>
+                <input className={s.input} placeholder={TEXT.placeholder}  defaultValue={searchParams.get('query')?.toString()} ref={inputRef} onKeyDown={onSubmit} name="search" onBlur={onBlur}/>
                 <Button type='button' title={TEXT.btn} className={s.btn} onClick={onSubmit}/>
             </form>
         </div>

@@ -579,8 +579,8 @@ export const RECIPES: RecipeType[] = [
         
     },
     {
-        slug: 'Big_and_Juicy_Wagyu_Beef_Cheeseburger',
-        title: 'Big and Juicy Wagyu Beef Cheeseburger',
+        slug: 'Big_and_Juicy_Wagyu_Beef',
+        title: 'Big and Juicy Wagyu Beef',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fuga nihil dolores repudiandae expedita corrupti aspernatur dignissimos, numquam praesentium. Quibusdam asperiores architecto ab quas impedit, quis id corrupti tenetur cumque qui temporibus laudantium illo consequatur totam repudiandae delectus, repellendus ducimus officiis necessitatibus assumenda voluptate? Aliquam animi nulla aperiam. Sit, veritatis.',
         img: '/images/recipes/recipes-img11.jpg',
         author: 'John Smith',
@@ -1621,8 +1621,8 @@ export const RECIPES: RecipeType[] = [
         
     },
     {
-        slug: 'Big_and_Juicy_Wagyu_Beef_Cheeseburger_2',
-        title: 'Big and Juicy Wagyu Beef Cheeseburger 2',
+        slug: 'Big_and_Juicy_Wagyu_Beef_2',
+        title: 'Big and Juicy Wagyu Beef 2',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fuga nihil dolores repudiandae expedita corrupti aspernatur dignissimos, numquam praesentium. Quibusdam asperiores architecto ab quas impedit, quis id corrupti tenetur cumque qui temporibus laudantium illo consequatur totam repudiandae delectus, repellendus ducimus officiis necessitatibus assumenda voluptate? Aliquam animi nulla aperiam. Sit, veritatis.',
         img: '/images/recipes/recipes-img11.jpg',
         author: 'John Smith',
