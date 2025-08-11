@@ -6,7 +6,7 @@ import s from './search.module.sass'
 import Button from '../button/button'
 
 const TEXT = { 
-    placeholder: 'Search article, news or recipe...',
+    placeholder: 'Search',
     btn: 'Search'
 }
 

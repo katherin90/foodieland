@@ -13,7 +13,7 @@ const DemoPopup:React.FC = () => {
     )
     
     React.useEffect(()=>{
-        setTimeout(()=>{setIsShow(false)}, 5000)
+        setTimeout(()=>{setIsShow(false)}, 9000)
     }, [])
     
     const closeOnClick = () => setIsShow(false)
@@ -24,6 +24,13 @@ const DemoPopup:React.FC = () => {
             <p className={s.description}>
                 This is not a real website. It has been created solely for demonstration purposes.
             </p>
+            <h3>On this demo, you can:</h3>
+            <ul className={s.list}>
+                <li>navigate through pages</li>
+                <li>filter recipes</li>
+                <li>search among recipes and posts</li>
+                <li>page-by-page pagination works</li>
+            </ul>
             <Button title='Close' type='button' onClick={closeOnClick} className={s.btn}/>
         </div>
     )
