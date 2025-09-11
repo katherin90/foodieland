@@ -20,7 +20,6 @@ const Footer:React.FC = () => {
                 </div>
                 <hr className={s.footerDivider}/>
                 <div className={s.footerBottom}>
-                    <Button title='See Code' url='https://github.com/katherin90/foodieland.git' newTab className={s.codeLink}/>
                     <p>design by <a href='https://www.flowbase.co/'>Flowbase</a></p>
                     <SocialNetworks />
                 </div>

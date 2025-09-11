@@ -4,6 +4,7 @@ import {inter} from '@/styles/fonts'
 import Footer from '@/components/footer/footer'
 import Header from '@/components/header/header'
 import DemoPopup from "@/components/demo-popup/demo-popup";
+import Button from "@/components/ui/button/button";
 
 export default function RootLayout({
   children,
@@ -19,6 +20,7 @@ export default function RootLayout({
         </main>
         <Footer/>
         <DemoPopup/>
+        <Button title='View Code on GitHub' url='https://github.com/katherin90/foodieland.git' newTab className='codeLink'/>
       </body>
     </html>
   );
