@@ -34,7 +34,7 @@ const nextConfig: NextConfig = {
   },
   sassOptions: {
     additionalData: `
-      @use '/src/styles/mixins.sass' as *
+      @use "/src/styles/mixins.sass" as *;
     `
   },
   compiler: {

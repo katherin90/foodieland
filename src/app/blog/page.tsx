@@ -38,9 +38,7 @@ const Blog:React.FC = async (props:any)=>{
               <Description text={TEXT.description}/>
             </div>
             <div className={s.search}>
-              <React.Suspense>
                 <Search/>
-              </React.Suspense>
             </div>
             <div className={s.content}>
               <BlogList data={posts}/>
